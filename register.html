@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for JavaScript Course</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-indigo-100 text-gray-800 flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full bg-white shadow-2xl rounded-3xl overflow-hidden p-8 md:p-12 lg:p-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700 mb-8 text-center">
+            Join Our JavaScript Course
+        </h2>
+        <form id="registrationForm" class="max-w-xl mx-auto space-y-6">
+            <div>
+                <label htmlFor="name" class="block text-lg font-medium text-gray-700 mb-2">
+                    Full Name
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
+                    required
+                />
+            </div>
+            <div>
+                <label htmlFor="email" class="block text-lg font-medium text-gray-700 mb-2">
+                    Email Address
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
+                    required
+                />
+            </div>
+            <div>
+                <label htmlFor="importance" class="block text-lg font-medium text-gray-700 mb-2">
+                    Why do you feel learning JavaScript is important?
+                </label>
+                <textarea
+                    id="importance"
+                    rows="5"
+                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
+                    required
+                ></textarea>
+            </div>
+            <div class="text-center">
+                <button
+                    type="submit"
+                    class="bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold py-3 px-8 rounded-full text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300"
+                >
+                    Submit Registration
+                </button>
+            </div>
+        </form>
+
+        <script>
+            document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                // In a real application, you would collect and send this data to a server.
+                // For this example, we just redirect.
+                window.location.href = 'thank_you_page.html';
+            });
+        </script>
+    </div>
+</body>
+</html>
