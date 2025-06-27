@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register for JavaScript Course</title>
+    <title>Thank You!</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -15,62 +15,27 @@
     </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-indigo-100 text-gray-800 flex items-center justify-center p-4">
-    <div class="max-w-4xl w-full bg-white shadow-2xl rounded-3xl overflow-hidden p-8 md:p-12 lg:p-16">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700 mb-8 text-center">
-            Join Our JavaScript Course
+    <div class="max-w-4xl w-full bg-white shadow-2xl rounded-3xl overflow-hidden p-8 md:p-12 lg:p-16 text-center">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-700 mb-6 leading-tight">
+            Thank You for Registering!
         </h2>
-        <form id="registrationForm" class="max-w-xl mx-auto space-y-6">
-            <div>
-                <label htmlFor="name" class="block text-lg font-medium text-gray-700 mb-2">
-                    Full Name
-                </label>
-                <input
-                    type="text"
-                    id="name"
-                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
-                    required
-                />
-            </div>
-            <div>
-                <label htmlFor="email" class="block text-lg font-medium text-gray-700 mb-2">
-                    Email Address
-                </label>
-                <input
-                    type="email"
-                    id="email"
-                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
-                    required
-                />
-            </div>
-            <div>
-                <label htmlFor="importance" class="block text-lg font-medium text-gray-700 mb-2">
-                    Why do you feel learning JavaScript is important?
-                </label>
-                <textarea
-                    id="importance"
-                    rows="5"
-                    class="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-pink-500 focus:border-pink-500 transition-all duration-200"
-                    required
-                ></textarea>
-            </div>
-            <div class="text-center">
-                <button
-                    type="submit"
-                    class="bg-gradient-to-r from-purple-500 to-pink-600 text-white font-bold py-3 px-8 rounded-full text-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300"
-                >
-                    Submit Registration
-                </button>
-            </div>
-        </form>
-
-        <script>
-            document.getElementById('registrationForm').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent default form submission
-                // In a real application, you would collect and send this data to a server.
-                // For this example, we just redirect.
-                window.location.href = 'thank_you_page.html';
-            });
-        </script>
+        <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            We're thrilled to have you join our JavaScript community. Your journey to becoming a web development pro starts now!
+        </p>
+        <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
+            As a token of our appreciation, here are some essential JavaScript notes to get you started:
+        </p>
+        <a
+            href="https://basponccollege.org/LMS/EMaterial/Science/Comp/HVP/JS%20Notes.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-teal-300"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Access JavaScript Notes
+        </a>
     </div>
 </body>
 </html>
